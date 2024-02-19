@@ -1,0 +1,76 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -20;
+}
+
+.fa-user {
+  font-size: 1.2rem;
+}
+
+.fa-plus {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.video-container {
+  /* if  image add this instead of vide background: url('/images/img-home.jpg') center center/cover no-repeat; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.video-container > h1 {
+  color: white;
+  font-size: 100px;
+  margin-top: -100px;
+}
+
+.video-container > p {
+  color: white;
+  font-size: 36px;
+  margin-top: 8px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.hero-btns {
+  margin-top: 32px;
+}
+
+.hero-btns .btn {
+  margin: 8px;
+}
+
+@media screen and (max-width: 960px) {
+  .video-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video-container > h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
+
+  .video-container > p {
+    font-size: 20px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+}
