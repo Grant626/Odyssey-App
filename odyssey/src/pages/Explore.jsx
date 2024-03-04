@@ -71,11 +71,10 @@ export default function Explore(props) {
     <>
       {authorized ? (
         <div
-          className=""
+          className="bg-cover h-lvh w-100"
           style={{
             backgroundImage: "url('../images/lake-boats.jpg')",
             backgroundSize: '100% 100%',
-            backgroundPosition: 'center',
           }}>
           <div className="text-center flex flex-col justify-center items-center ">
             <Container>

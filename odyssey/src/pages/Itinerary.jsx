@@ -71,17 +71,15 @@ export default function Itinerary(props) {
     };
 
     fetchData();
-  }, []);
+  }, [authToken, destination]);
 
   return (
     <>
       {authorized ? (
         <div
-          className=""
+          className="bg-cover h-lvh w-100"
           style={{
             backgroundImage: "url('../images/rainbow-hills.jpg')",
-            backgroundSize: 'auto',
-            backgroundPosition: 'center',
           }}>
           <div className="container-fluid pt-5 pb-4">
             <h1 className="text-center text-3xl h1">Your Current Itinerary</h1>

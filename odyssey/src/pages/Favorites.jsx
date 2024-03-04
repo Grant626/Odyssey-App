@@ -1,8 +1,8 @@
-import { LoginBtn } from "../components";
-import { useState, useEffect } from "react";
-import { getAuth } from "firebase/auth";
-import axios from "axios";
-import TestCard from "../components/TestCard";
+import { LoginBtn } from '../components';
+import { useState, useEffect } from 'react';
+import { getAuth } from 'firebase/auth';
+import axios from 'axios';
+import TestCard from '../components/TestCard';
 
 export default function Favorites(props) {
   //get auth token from state
@@ -10,7 +10,7 @@ export default function Favorites(props) {
 
   //useState for checking authorization status
   const [authorized, setAuthorized] = useState(
-    false || window.localStorage.getItem("auth") === "true"
+    false || window.localStorage.getItem('auth') === 'true'
   );
   const [auth, setAuth] = useState(getAuth());
 
@@ -47,13 +47,10 @@ export default function Favorites(props) {
     <>
       {authorized ? (
         <div
-          className="flex justify-center"
+          className="bg-cover h-lvh w-100"
           style={{
             backgroundImage: "url('../images/beach.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+          }}>
           <div className="container-fluid h-screen pt-5 pb-4">
             <div className="flex flex-col justify-center">
               <h1 className="m-5 text-center">Your favorite businesses!</h1>
@@ -71,10 +68,9 @@ export default function Favorites(props) {
           className=""
           style={{
             backgroundImage: "url('../images/beach.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}>
           <div className="text-center h-screen flex flex-col justify-center items-center ">
             Please login to see your favorites!
             <LoginBtn />
