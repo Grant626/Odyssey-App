@@ -1,94 +1,87 @@
 .pref-tag-search-wrapper {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-.tag-search {
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-/*     justify-content: center;
-    align-items: center; */
-    /* background-color: #007bff; */
-    background-color: #B2D9F0;
-  
-  }
-
-  .card-title {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    text-align: left;
-    /* margin: 8px; */
-    
-  }
-  .card-header {
-    margin: -20px -20px 20px -20px;
-    border-radius: 5px 5px 0 0;
-  }
-
-  .row-container {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    width: 100%;
-    background-color: transparent;
-  }
-  .search-container {
-    display: flex;
-    flex-direction: row;
-
-    align-items: stretch;
-    justify-self: center;
-    
-    color: transparent;
-  }
-  
-  .add-filters-container {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-   /*  margin: 5px; */
-    background-color: transparent;
-  }
-
-  .button {
-    background-color: #007bff;
-    
-    color: white;
-    margin: 8px;
-    
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
-  
+.tag-search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  background-color: #b2d9f0;
+}
 
-  .selected-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-bottom: 10px;
-    background-color: transparent;
-  }
-  
-  .tag {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 5px 10px; /* verctical, horizontal */
-    margin: 5px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 4px;
-  }
-  
-  /* need to use 'svg' to target the svg icon from fontawesome */
-  .tag svg {
-    margin-left: 8px;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  
+.card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  text-align: left;
+}
+.card-header {
+  margin: -20px -20px 20px -20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  margin: 8px;
+}
+.search-container {
+  display: flex;
+  flex-direction: row;
+
+  align-items: stretch;
+  justify-self: center;
+
+  color: transparent;
+}
+
+.add-filters-container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  margin: 8px;
+}
+
+.selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  height: 50px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  padding: 5px 10px; /* verctical, horizontal */
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+/* need to use 'svg' to target the svg icon from fontawesome */
+.tag svg {
+  margin-left: 8px;
+  cursor: pointer;
+  background-color: transparent;
+}
